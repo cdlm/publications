@@ -1,0 +1,19 @@
+\documentclass[a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{classicthesis}
+% \usepackage[default]{opensans}
+% \usepackage{fullpage}
+\usepackage[english]{babel}
+\usepackage[babel]{csquotes}
+\usepackage[style=numeric, sorting=ydnt, defernumbers, backend=biber]{biblatex}
+\usepackage{hyperref}
+
+\addbibresource{publications.bib}
+
+\begin{document}
+\nocite{*}
+\printbibliography[heading=subbibliography, keyword=international, keyword=journal,    title={International Journals}]
+\printbibliography[heading=subbibliography, keyword=international, keyword=conference, title={International Conferences}]
+\printbibliography[heading=subbibliography, keyword=international, keyword=workshop,   title={International Workshops}]
+\end{document}
